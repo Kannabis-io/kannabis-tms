@@ -9,9 +9,6 @@ dependencies:
   '@ember/legacy-built-in-components':
     specifier: ^0.4.2
     version: 0.4.2(ember-source@5.4.1)
-  '@fleetbase/billing-engine':
-    specifier: ^0.1.5
-    version: 0.1.5(@ember/string@3.1.1)(@ember/test-helpers@3.3.1)(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(ember-engines@0.9.0)(ember-resolver@11.0.1)(ember-source@5.4.1)(eslint@8.57.1)(postcss@8.4.49)(tracked-built-ins@3.4.0)(webpack@5.97.1)
   '@fleetbase/customer-portal-engine':
     specifier: ^0.0.5
     version: 0.0.5(@ember/string@3.1.1)(@ember/test-helpers@3.3.1)(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(ember-engines@0.9.0)(ember-resolver@11.0.1)(ember-source@5.4.1)(eslint@8.57.1)(postcss@8.4.49)(tracked-built-ins@3.4.0)(webpack@5.97.1)
@@ -310,16 +307,6 @@ devDependencies:
     version: 5.97.1
 
 packages:
-
-  /@adopted-ember-addons/ember-stripe-elements@2.0.5:
-    resolution: {integrity: sha512-OPANw0wSqnxebgDRWU50qT+oQEdumBBkOxbeEEJMd9WivQhmlT3Cp8Y4Pu6BToMUtjXSVc14gQvy21HGDV8eTQ==}
-    engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      ember-cli-babel: 7.26.11
-      ember-cli-htmlbars: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -2602,55 +2589,6 @@ packages:
   /@eslint/js@8.57.1:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
-  /@fleetbase/billing-engine@0.1.5(@ember/string@3.1.1)(@ember/test-helpers@3.3.1)(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(ember-engines@0.9.0)(ember-resolver@11.0.1)(ember-source@5.4.1)(eslint@8.57.1)(postcss@8.4.49)(tracked-built-ins@3.4.0)(webpack@5.97.1):
-    resolution: {integrity: sha512-wSpBTYL3R7YzMog3D9bGjJC4FuH1nlpLpIugN6WGVdZmNruKiYAKXMoOoVFLCAJUH0ZxY2uqkRl/zaRDFTZIOg==}
-    engines: {node: '>= 18'}
-    peerDependencies:
-      ember-engines: ^0.9.0
-    dependencies:
-      '@adopted-ember-addons/ember-stripe-elements': 2.0.5
-      '@babel/core': 7.26.0
-      '@fleetbase/ember-core': 0.2.21(@ember/string@3.1.1)(@ember/test-helpers@3.3.1)(ember-resolver@11.0.1)(ember-source@5.4.1)(eslint@8.57.1)(webpack@5.97.1)
-      '@fleetbase/ember-ui': 0.2.36(@ember/test-helpers@3.3.1)(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(ember-resolver@11.0.1)(ember-source@5.4.1)(postcss@8.4.49)(tracked-built-ins@3.4.0)(webpack@5.97.1)
-      '@fortawesome/ember-fontawesome': 2.0.0(ember-source@5.4.1)(webpack@5.97.1)
-      '@fortawesome/fontawesome-svg-core': 6.4.0
-      '@fortawesome/free-brands-svg-icons': 6.4.0
-      '@fortawesome/free-solid-svg-icons': 6.4.0
-      ember-auto-import: 2.10.0(webpack@5.97.1)
-      ember-cli-babel: 8.2.0(@babel/core@7.26.0)
-      ember-cli-htmlbars: 6.3.0
-      ember-engines: 0.9.0(@ember/legacy-built-in-components@0.4.2)(ember-source@5.4.1)
-      ember-intl: 6.3.2(@babel/core@7.26.0)(webpack@5.97.1)
-      ember-radio-button: 3.0.0-beta.1
-      ember-wormhole: 0.6.0
-    transitivePeerDependencies:
-      - '@ember/string'
-      - '@ember/test-helpers'
-      - '@glimmer/component'
-      - '@glimmer/tracking'
-      - '@glint/environment-ember-loose'
-      - '@glint/template'
-      - '@swc/core'
-      - bufferutil
-      - ember-cli-mirage
-      - ember-resolver
-      - ember-source
-      - esbuild
-      - eslint
-      - miragejs
-      - postcss
-      - rollup
-      - supports-color
-      - tracked-built-ins
-      - ts-node
-      - typescript
-      - uglify-js
-      - utf-8-validate
-      - webpack
-      - webpack-cli
-      - webpack-command
-    dev: false
 
   /@fleetbase/customer-portal-engine@0.0.5(@ember/string@3.1.1)(@ember/test-helpers@3.3.1)(@glimmer/component@1.1.2)(@glimmer/tracking@1.1.2)(ember-engines@0.9.0)(ember-resolver@11.0.1)(ember-source@5.4.1)(eslint@8.57.1)(postcss@8.4.49)(tracked-built-ins@3.4.0)(webpack@5.97.1):
     resolution: {integrity: sha512-SXwr/wqiVldKoiTrCQbBSXVksR3PT3TR+Ey5KVC/VGUir9s4flj8L1t3bXgSohVxEi+tEJaOgswwAAqspKqCzQ==}
