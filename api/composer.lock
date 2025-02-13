@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "404e2d41cba0d5fe1057509169665a31",
+    "content-hash": "ce019a08eaed0765114e4f72f6b83366",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.339.7",
+            "version": "3.339.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7b7e48ce7970c0416c5fda045df7b93948fbf643"
+                "reference": "a63e79c15a972c54bf015a16cce3f3572e0c8221"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7b7e48ce7970c0416c5fda045df7b93948fbf643",
-                "reference": "7b7e48ce7970c0416c5fda045df7b93948fbf643",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a63e79c15a972c54bf015a16cce3f3572e0c8221",
+                "reference": "a63e79c15a972c54bf015a16cce3f3572e0c8221",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,6 @@
                 "ext-openssl": "*",
                 "ext-pcntl": "*",
                 "ext-sockets": "*",
-                "paragonie/random_compat": ">= 2",
                 "phpunit/phpunit": "^5.6.3 || ^8.5 || ^9.5",
                 "psr/cache": "^2.0 || ^3.0",
                 "psr/simple-cache": "^2.0 || ^3.0",
@@ -154,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.339.7"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.339.12"
             },
-            "time": "2025-02-05T19:06:15+00:00"
+            "time": "2025-02-12T19:08:43+00:00"
         },
         {
             "name": "aws/aws-sdk-php-laravel",
@@ -2059,31 +2058,28 @@
         },
         {
             "name": "edamov/pushok",
-            "version": "0.16.0",
+            "version": "0.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/edamov/pushok.git",
-                "reference": "4dd7a9d3dcd02c7ee55cc96b0e5cf184a093c275"
+                "reference": "52dae5b5b2dc47e5aa5a2919e4696874fc2bb153"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/edamov/pushok/zipball/4dd7a9d3dcd02c7ee55cc96b0e5cf184a093c275",
-                "reference": "4dd7a9d3dcd02c7ee55cc96b0e5cf184a093c275",
+                "url": "https://api.github.com/repos/edamov/pushok/zipball/52dae5b5b2dc47e5aa5a2919e4696874fc2bb153",
+                "reference": "52dae5b5b2dc47e5aa5a2919e4696874fc2bb153",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
-                "ext-intl": "*",
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "ext-xml": "*",
                 "lib-curl": ">=7.46.0",
                 "lib-openssl": ">=1.0.2.5",
                 "php": "^8.1",
                 "web-token/jwt-library": "^3.0"
             },
             "require-dev": {
-                "ext-xdebug": "*",
                 "php-coveralls/php-coveralls": "^2.0",
                 "phpunit/phpunit": "^10.5",
                 "squizlabs/php_codesniffer": "^3.4"
@@ -2121,9 +2117,9 @@
             ],
             "support": {
                 "issues": "https://github.com/edamov/pushok/issues",
-                "source": "https://github.com/edamov/pushok/tree/0.16.0"
+                "source": "https://github.com/edamov/pushok/tree/0.18.0"
             },
-            "time": "2024-02-26T10:34:34+00:00"
+            "time": "2025-02-03T11:39:35+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -2377,7 +2373,7 @@
             "version": "0.1.7",
             "dist": {
                 "type": "tar",
-                "url": "https://s3.ap-southeast-1.amazonaws.com/fleetbase-registry-production/flb/%40fleetbase/billing-engine/billing-engine-0.1.7.tgz?AWSAccessKeyId=ASIA26E6KG6WADWHHBJR&Expires=1738834195&Signature=UP24YMevl44QPlgde%2FW%2FSFqFe50%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEEEaDmFwLXNvdXRoZWFzdC0xIkcwRQIgcZKLyymHI%2FbZJxh2flIStIveuUQBUye7kkeHd%2FZktNQCIQCeBwmbTJglZEf3N8iIy%2F3466Ohd30C5UGJO9mjdt0Y7CqWBAhaEAAaDDc1MTk1MTI5NjQyOCIMLuIHNw0yYEsqAMCqKvMD8ejPUKGZuBV%2B9wzEd4%2FADln3lchbkQPJ4HsnFjHekXKJ%2BPrGANclCaKkCuPvCdgQemVWN2FmU63UOzU%2Fpjquriq1%2BM%2BEAxZ1yXdm5K0qV%2FyLTEgYYl9wpzvPec1CnCTzMoxBCvvAYeoEPf4FNtOl31J2mSP9C8WoazrcnvmTC1I3DbrqsBEftp0tui%2FzeXCqvKb2maOi41DcswnOKJWkzkxBSc4LDwm67avbYTFgLt1U1B95cXvHlXlhZTxwHUQuD5g3hpxAu7nQvy7BRTW6d1pbo2pOsseiZUO9ykb0XnCKrUUR7Qs33TX9odVK2Fi8Tds8pCGFQ%2BWt%2BlDLJdG2ELQU4f4f9Bu7aaSCZBEyemT5XoYR9qYiJxMppepwxYg9h0CgWv5htYSRg6MCR780HxzPo3VLZU8FpRXyVYw2X09CVhhY0Fq1M8ijb66VL0EK6GKO%2F6eVAEzNxDryN09bykg2uhSUhAhr7IgVR6CTTb%2Fn45WE1YJGmgyzmorVH2Nuc4tYax6g9QS3CaCOoII%2FgDhqrlE15O1krydE%2FazpFcVIZEKN%2BVpHT%2BxEglWGUv354trOju%2BLaw%2FOuOqqqhU%2BmSwHnOq2zPcmxh8JQw3KwIvVHQl7CmI4EMq8ZKaWRYTgTjWgpQyqieX9Q0owkMeSDgiPhTCL7pG9BjqmAUFa76YIyd1XSXyqzFoTWXqSLL%2BuZ7XEX3XGBRDNH666GgboueMcagCM9QMes2vc44C6%2Fj594PuzOP%2FNYP%2FsPSuLLOJysW69jz5YhTAp%2FTdAkFmz0rcfJ6BGrQCRUOoXeVk%2F6ARslGEOi3rprrKefHjoh32fCQL2avP%2BaZ76hQyKVXxRBwj5Yvcv0n3XEB%2BIXIckrDDdzLNHDbHnRPTDUspixWtp240%3D"
+                "url": "https://s3.ap-southeast-1.amazonaws.com/fleetbase-registry-production/flb/%40fleetbase/billing-engine/billing-engine-0.1.7.tgz?AWSAccessKeyId=ASIA26E6KG6WIMPIQ65F&Expires=1739435321&Signature=l7wl62QSlvyGdBpCJwL%2B7T8S3Hc%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkcwRQIhAI06mhlBReEnXTvxnW4jM%2BvpDptRPym0YTo0w3SV3yNIAiAp7ELLHYqbWXM5EFPDl0y83xfmNLkB2chx9CxqkKnM8CqWBAgQEAAaDDc1MTk1MTI5NjQyOCIMrezPHOcWXn1bomdCKvMDVM1A1F0Lt6CXZGFiZ%2FgccpEYCFXOHAg18NKXykK4LwjLRIjjgtc8WVWhmYAbbnzefBk6Kp5N2f5H9TT3O%2F4Og%2F4YKulXA3jA2ELED7%2FKzF474CwuWRSttBpeHlY2PYN5g5mKGn4A%2F%2FkGTyFX9rIO3r9cp77D9XHq34qq5OqDHogmL3AmPb50VCUxS0ixZOGK8iCwDaUtR0O0GIykd6DTuZuy4d4GKytd%2FRQ%2FlO9%2BxG%2B1hx4dybWCDRpbqEhGuRxyCS7Rm7K%2B7jw5TW4XmyIN32%2BcH1qYNdTHOFQfAJVYkoy3iygFiM72fiJzuCy%2FLU4SopUrcFJzdWZ0S2gqsWvs8vuGh5JOmceEWx2qA0B87LRni%2Bgz0OmYN%2BXwQmSOwU4dLpEhZWOG5dgDbe8VnAKRftaVW2VOKJvOKcU%2F7KHpxN41HgNGmgB%2BT6KHS0i%2BSUMc%2BXLHmWZi1Pqy9OA2mtQ3FC6TRYQUnUgKoWgMVppjp60%2FRZ74WkrYngQNktSZ4b5M2%2BJKVhXm09rIl97jMRcNdWYlSRBDymqCTk3e%2F8F9LIoE7SvspEH%2FtyYJDOLYSSjfQWWPAj85xixFIz1dHUdbY2%2FD66PyqFcjrKdHHJHW3JNNZ2i1x7CKKWlXx1cEj3mzBxk5vwngJMlFy2wFffe1AIfWRDCLpra9BjqmAUv9dmfhJQyvlWwSnGxrBrNMD0S5glYi5z7gVX%2Bo7%2B4DqZcWBTjVlijxMFP7ShgmGw1m7fIcrjB%2BT04a6GU4mfwL7z7st9Q6CVhu3odoeyK%2FAKn28diId3jlQjNy%2Bgs3eljT%2BPjjD3kpLF8ycXhSDo9%2BbEqJj7o6uUWnbuD1M59gmq5sOaAcIUuRP8IXrY%2FYqW3WF8G%2FagZ42ON%2FCvo2FkE07d1COhs%3D"
             },
             "require": {
                 "fleetbase/core-api": "*",
@@ -2472,16 +2468,16 @@
         },
         {
             "name": "fleetbase/core-api",
-            "version": "1.5.27",
+            "version": "1.5.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fleetbase/core-api.git",
-                "reference": "3b0dbaa3b85be6228d3cfafd373cb9024dee0446"
+                "reference": "a027b6af3b9653237ad5d88ef7c5fe3f9e6508ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fleetbase/core-api/zipball/3b0dbaa3b85be6228d3cfafd373cb9024dee0446",
-                "reference": "3b0dbaa3b85be6228d3cfafd373cb9024dee0446",
+                "url": "https://api.github.com/repos/fleetbase/core-api/zipball/a027b6af3b9653237ad5d88ef7c5fe3f9e6508ab",
+                "reference": "a027b6af3b9653237ad5d88ef7c5fe3f9e6508ab",
                 "shasum": ""
             },
             "require": {
@@ -2566,16 +2562,16 @@
             ],
             "support": {
                 "issues": "https://github.com/fleetbase/core-api/issues",
-                "source": "https://github.com/fleetbase/core-api/tree/v1.5.27"
+                "source": "https://github.com/fleetbase/core-api/tree/v1.5.28"
             },
-            "time": "2025-02-05T10:38:39+00:00"
+            "time": "2025-02-12T14:57:27+00:00"
         },
         {
             "name": "fleetbase/customer-portal-api",
             "version": "0.0.6",
             "dist": {
                 "type": "tar",
-                "url": "https://s3.ap-southeast-1.amazonaws.com/fleetbase-registry-production/flb/%40fleetbase/customer-portal-engine/customer-portal-engine-0.0.6.tgz?AWSAccessKeyId=ASIA26E6KG6WADWHHBJR&Expires=1738834195&Signature=V8hvJI6H7B%2B13v7lDI6jun47sUY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEEEaDmFwLXNvdXRoZWFzdC0xIkcwRQIgcZKLyymHI%2FbZJxh2flIStIveuUQBUye7kkeHd%2FZktNQCIQCeBwmbTJglZEf3N8iIy%2F3466Ohd30C5UGJO9mjdt0Y7CqWBAhaEAAaDDc1MTk1MTI5NjQyOCIMLuIHNw0yYEsqAMCqKvMD8ejPUKGZuBV%2B9wzEd4%2FADln3lchbkQPJ4HsnFjHekXKJ%2BPrGANclCaKkCuPvCdgQemVWN2FmU63UOzU%2Fpjquriq1%2BM%2BEAxZ1yXdm5K0qV%2FyLTEgYYl9wpzvPec1CnCTzMoxBCvvAYeoEPf4FNtOl31J2mSP9C8WoazrcnvmTC1I3DbrqsBEftp0tui%2FzeXCqvKb2maOi41DcswnOKJWkzkxBSc4LDwm67avbYTFgLt1U1B95cXvHlXlhZTxwHUQuD5g3hpxAu7nQvy7BRTW6d1pbo2pOsseiZUO9ykb0XnCKrUUR7Qs33TX9odVK2Fi8Tds8pCGFQ%2BWt%2BlDLJdG2ELQU4f4f9Bu7aaSCZBEyemT5XoYR9qYiJxMppepwxYg9h0CgWv5htYSRg6MCR780HxzPo3VLZU8FpRXyVYw2X09CVhhY0Fq1M8ijb66VL0EK6GKO%2F6eVAEzNxDryN09bykg2uhSUhAhr7IgVR6CTTb%2Fn45WE1YJGmgyzmorVH2Nuc4tYax6g9QS3CaCOoII%2FgDhqrlE15O1krydE%2FazpFcVIZEKN%2BVpHT%2BxEglWGUv354trOju%2BLaw%2FOuOqqqhU%2BmSwHnOq2zPcmxh8JQw3KwIvVHQl7CmI4EMq8ZKaWRYTgTjWgpQyqieX9Q0owkMeSDgiPhTCL7pG9BjqmAUFa76YIyd1XSXyqzFoTWXqSLL%2BuZ7XEX3XGBRDNH666GgboueMcagCM9QMes2vc44C6%2Fj594PuzOP%2FNYP%2FsPSuLLOJysW69jz5YhTAp%2FTdAkFmz0rcfJ6BGrQCRUOoXeVk%2F6ARslGEOi3rprrKefHjoh32fCQL2avP%2BaZ76hQyKVXxRBwj5Yvcv0n3XEB%2BIXIckrDDdzLNHDbHnRPTDUspixWtp240%3D"
+                "url": "https://s3.ap-southeast-1.amazonaws.com/fleetbase-registry-production/flb/%40fleetbase/customer-portal-engine/customer-portal-engine-0.0.6.tgz?AWSAccessKeyId=ASIA26E6KG6WIMPIQ65F&Expires=1739435321&Signature=eKFVq1NT24KWqj3e6m5SkcU%2BnFQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEOf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLXNvdXRoZWFzdC0xIkcwRQIhAI06mhlBReEnXTvxnW4jM%2BvpDptRPym0YTo0w3SV3yNIAiAp7ELLHYqbWXM5EFPDl0y83xfmNLkB2chx9CxqkKnM8CqWBAgQEAAaDDc1MTk1MTI5NjQyOCIMrezPHOcWXn1bomdCKvMDVM1A1F0Lt6CXZGFiZ%2FgccpEYCFXOHAg18NKXykK4LwjLRIjjgtc8WVWhmYAbbnzefBk6Kp5N2f5H9TT3O%2F4Og%2F4YKulXA3jA2ELED7%2FKzF474CwuWRSttBpeHlY2PYN5g5mKGn4A%2F%2FkGTyFX9rIO3r9cp77D9XHq34qq5OqDHogmL3AmPb50VCUxS0ixZOGK8iCwDaUtR0O0GIykd6DTuZuy4d4GKytd%2FRQ%2FlO9%2BxG%2B1hx4dybWCDRpbqEhGuRxyCS7Rm7K%2B7jw5TW4XmyIN32%2BcH1qYNdTHOFQfAJVYkoy3iygFiM72fiJzuCy%2FLU4SopUrcFJzdWZ0S2gqsWvs8vuGh5JOmceEWx2qA0B87LRni%2Bgz0OmYN%2BXwQmSOwU4dLpEhZWOG5dgDbe8VnAKRftaVW2VOKJvOKcU%2F7KHpxN41HgNGmgB%2BT6KHS0i%2BSUMc%2BXLHmWZi1Pqy9OA2mtQ3FC6TRYQUnUgKoWgMVppjp60%2FRZ74WkrYngQNktSZ4b5M2%2BJKVhXm09rIl97jMRcNdWYlSRBDymqCTk3e%2F8F9LIoE7SvspEH%2FtyYJDOLYSSjfQWWPAj85xixFIz1dHUdbY2%2FD66PyqFcjrKdHHJHW3JNNZ2i1x7CKKWlXx1cEj3mzBxk5vwngJMlFy2wFffe1AIfWRDCLpra9BjqmAUv9dmfhJQyvlWwSnGxrBrNMD0S5glYi5z7gVX%2Bo7%2B4DqZcWBTjVlijxMFP7ShgmGw1m7fIcrjB%2BT04a6GU4mfwL7z7st9Q6CVhu3odoeyK%2FAKn28diId3jlQjNy%2Bgs3eljT%2BPjjD3kpLF8ycXhSDo9%2BbEqJj7o6uUWnbuD1M59gmq5sOaAcIUuRP8IXrY%2FYqW3WF8G%2FagZ42ON%2FCvo2FkE07d1COhs%3D"
             },
             "require": {
                 "fleetbase/core-api": "*",
@@ -2650,16 +2646,16 @@
         },
         {
             "name": "fleetbase/fleetops-api",
-            "version": "0.5.19",
+            "version": "0.5.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fleetbase/fleetops.git",
-                "reference": "534eccccf3c6ff9e67b6ac6a7c49a9eb5d855b18"
+                "reference": "abc3b40c2728273938c67efa13a7a43bf263c8b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fleetbase/fleetops/zipball/534eccccf3c6ff9e67b6ac6a7c49a9eb5d855b18",
-                "reference": "534eccccf3c6ff9e67b6ac6a7c49a9eb5d855b18",
+                "url": "https://api.github.com/repos/fleetbase/fleetops/zipball/abc3b40c2728273938c67efa13a7a43bf263c8b3",
+                "reference": "abc3b40c2728273938c67efa13a7a43bf263c8b3",
                 "shasum": ""
             },
             "require": {
@@ -2733,9 +2729,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fleetbase/fleetops/issues",
-                "source": "https://github.com/fleetbase/fleetops/tree/v0.5.19"
+                "source": "https://github.com/fleetbase/fleetops/tree/v0.5.21"
             },
-            "time": "2025-02-04T15:15:43+00:00"
+            "time": "2025-02-13T06:34:49+00:00"
         },
         {
             "name": "fleetbase/laravel-mysql-spatial",
@@ -2887,16 +2883,16 @@
         },
         {
             "name": "fleetbase/storefront-api",
-            "version": "0.3.25",
+            "version": "0.3.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fleetbase/storefront.git",
-                "reference": "f7d373d74632327b7153b3c7ccf2196d81e80f88"
+                "reference": "6f53138561f6f481a5a4f1f07a9240017f024798"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fleetbase/storefront/zipball/f7d373d74632327b7153b3c7ccf2196d81e80f88",
-                "reference": "f7d373d74632327b7153b3c7ccf2196d81e80f88",
+                "url": "https://api.github.com/repos/fleetbase/storefront/zipball/6f53138561f6f481a5a4f1f07a9240017f024798",
+                "reference": "6f53138561f6f481a5a4f1f07a9240017f024798",
                 "shasum": ""
             },
             "require": {
@@ -2964,9 +2960,9 @@
             ],
             "support": {
                 "issues": "https://github.com/fleetbase/storefront/issues",
-                "source": "https://github.com/fleetbase/storefront/tree/v0.3.25"
+                "source": "https://github.com/fleetbase/storefront/tree/v0.3.26"
             },
-            "time": "2025-02-04T15:21:03+00:00"
+            "time": "2025-02-12T14:56:40+00:00"
         },
         {
             "name": "fleetbase/twilio",
@@ -3715,16 +3711,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.393.0",
+            "version": "v0.394.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "ed24c09584df8ef0cdcfb9d4305abf66fc17e609"
+                "reference": "17fa8210d62c02c398fb4985ed4bc461d18989c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/ed24c09584df8ef0cdcfb9d4305abf66fc17e609",
-                "reference": "ed24c09584df8ef0cdcfb9d4305abf66fc17e609",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/17fa8210d62c02c398fb4985ed4bc461d18989c1",
+                "reference": "17fa8210d62c02c398fb4985ed4bc461d18989c1",
                 "shasum": ""
             },
             "require": {
@@ -3753,22 +3749,22 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.393.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.394.0"
             },
-            "time": "2025-02-03T00:54:21+00:00"
+            "time": "2025-02-10T01:06:23+00:00"
         },
         {
             "name": "google/auth",
-            "version": "v1.45.3",
+            "version": "v1.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-auth-library-php.git",
-                "reference": "000d9439f430c6e56cba105c5ab750f5f7d69ea8"
+                "reference": "7fafae99a41984cbfb92508174263cf7bf3049b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/000d9439f430c6e56cba105c5ab750f5f7d69ea8",
-                "reference": "000d9439f430c6e56cba105c5ab750f5f7d69ea8",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/7fafae99a41984cbfb92508174263cf7bf3049b9",
+                "reference": "7fafae99a41984cbfb92508174263cf7bf3049b9",
                 "shasum": ""
             },
             "require": {
@@ -3812,24 +3808,24 @@
                 "oauth2"
             ],
             "support": {
-                "docs": "https://googleapis.github.io/google-auth-library-php/main/",
+                "docs": "https://cloud.google.com/php/docs/reference/auth/latest",
                 "issues": "https://github.com/googleapis/google-auth-library-php/issues",
-                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.45.3"
+                "source": "https://github.com/googleapis/google-auth-library-php/tree/v1.46.0"
             },
-            "time": "2025-01-29T18:17:08+00:00"
+            "time": "2025-02-12T22:21:37+00:00"
         },
         {
             "name": "google/cloud-core",
-            "version": "v1.61.0",
+            "version": "v1.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-core.git",
-                "reference": "c2cd6aff17704dd5a59e2c1c802509f9e82d36fd"
+                "reference": "8de597fbd6fcac35a33594672d180c5e271fb4f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/c2cd6aff17704dd5a59e2c1c802509f9e82d36fd",
-                "reference": "c2cd6aff17704dd5a59e2c1c802509f9e82d36fd",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/8de597fbd6fcac35a33594672d180c5e271fb4f0",
+                "reference": "8de597fbd6fcac35a33594672d180c5e271fb4f0",
                 "shasum": ""
             },
             "require": {
@@ -3880,9 +3876,9 @@
             ],
             "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-core/tree/v1.61.0"
+                "source": "https://github.com/googleapis/google-cloud-php-core/tree/v1.62.0"
             },
-            "time": "2025-01-11T02:14:50+00:00"
+            "time": "2025-02-08T00:05:17+00:00"
         },
         {
             "name": "google/cloud-storage",
@@ -5431,25 +5427,25 @@
         },
         {
             "name": "laravel-notification-channels/apn",
-            "version": "v5.4.0",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-notification-channels/apn.git",
-                "reference": "bde87ebcd96afe34bf47558fb26acdd6412d0ba6"
+                "reference": "4ed67d59640fb93a2e100ba354d54cfe3e2d5fd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-notification-channels/apn/zipball/bde87ebcd96afe34bf47558fb26acdd6412d0ba6",
-                "reference": "bde87ebcd96afe34bf47558fb26acdd6412d0ba6",
+                "url": "https://api.github.com/repos/laravel-notification-channels/apn/zipball/4ed67d59640fb93a2e100ba354d54cfe3e2d5fd2",
+                "reference": "4ed67d59640fb93a2e100ba354d54cfe3e2d5fd2",
                 "shasum": ""
             },
             "require": {
-                "edamov/pushok": "^0.16",
-                "illuminate/cache": "^9.0|^10.0|^11.0",
-                "illuminate/config": "^9.0|^10.0|^11.0",
-                "illuminate/events": "^9.0|^10.0|^11.0",
-                "illuminate/notifications": "^9.0|^10.0|^11.0",
-                "illuminate/support": "^9.0|^10.0|^11.0",
+                "edamov/pushok": "^0.18",
+                "illuminate/cache": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/events": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
                 "nesbot/carbon": "^2.66|^3.0",
                 "php": "^8.1"
             },
@@ -5489,9 +5485,9 @@
             "homepage": "https://github.com/laravel-notification-channels/apn",
             "support": {
                 "issues": "https://github.com/laravel-notification-channels/apn/issues",
-                "source": "https://github.com/laravel-notification-channels/apn/tree/v5.4.0"
+                "source": "https://github.com/laravel-notification-channels/apn/tree/v5.5.0"
             },
-            "time": "2024-08-13T09:38:30+00:00"
+            "time": "2025-02-10T21:43:00+00:00"
         },
         {
             "name": "laravel-notification-channels/fcm",
@@ -5914,16 +5910,16 @@
         },
         {
             "name": "laravel/octane",
-            "version": "v2.6.1",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/octane.git",
-                "reference": "6d46153a04d73d07466bbb1f70d827614dc131eb"
+                "reference": "c9580d430fa8459823bd1dfbcb2bcfd591548cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/octane/zipball/6d46153a04d73d07466bbb1f70d827614dc131eb",
-                "reference": "6d46153a04d73d07466bbb1f70d827614dc131eb",
+                "url": "https://api.github.com/repos/laravel/octane/zipball/c9580d430fa8459823bd1dfbcb2bcfd591548cec",
+                "reference": "c9580d430fa8459823bd1dfbcb2bcfd591548cec",
                 "shasum": ""
             },
             "require": {
@@ -6000,7 +5996,7 @@
                 "issues": "https://github.com/laravel/octane/issues",
                 "source": "https://github.com/laravel/octane"
             },
-            "time": "2025-01-28T15:16:08+00:00"
+            "time": "2025-02-11T15:04:38+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -7670,16 +7666,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.72.6",
+            "version": "2.73.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon.git",
-                "reference": "1e9d50601e7035a4c61441a208cb5bed73e108c5"
+                "reference": "9228ce90e1035ff2f0db84b40ec2e023ed802075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/1e9d50601e7035a4c61441a208cb5bed73e108c5",
-                "reference": "1e9d50601e7035a4c61441a208cb5bed73e108c5",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/9228ce90e1035ff2f0db84b40ec2e023ed802075",
+                "reference": "9228ce90e1035ff2f0db84b40ec2e023ed802075",
                 "shasum": ""
             },
             "require": {
@@ -7773,7 +7769,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-27T09:28:11+00:00"
+            "time": "2025-01-08T20:10:23+00:00"
         },
         {
             "name": "nette/caching",
@@ -8894,20 +8890,20 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.29.9",
+            "version": "1.29.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "ffb47b639649fc9c8a6fa67977a27b756592ed85"
+                "reference": "c80041b1628c4f18030407134fe88303661d4e4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/ffb47b639649fc9c8a6fa67977a27b756592ed85",
-                "reference": "ffb47b639649fc9c8a6fa67977a27b756592ed85",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c80041b1628c4f18030407134fe88303661d4e4e",
+                "reference": "c80041b1628c4f18030407134fe88303661d4e4e",
                 "shasum": ""
             },
             "require": {
-                "composer/pcre": "^3.3",
+                "composer/pcre": "^1||^2||^3",
                 "ext-ctype": "*",
                 "ext-dom": "*",
                 "ext-fileinfo": "*",
@@ -8994,9 +8990,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.9"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.10"
             },
-            "time": "2025-01-26T04:55:00+00:00"
+            "time": "2025-02-08T02:56:14+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -11166,29 +11162,29 @@
         },
         {
             "name": "spatie/laravel-activitylog",
-            "version": "4.9.1",
+            "version": "4.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-activitylog.git",
-                "reference": "9abddaa9f2681d97943748c7fa04161cf4642e8c"
+                "reference": "466f30f7245fe3a6e328ad5e6812bd43b4bddea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-activitylog/zipball/9abddaa9f2681d97943748c7fa04161cf4642e8c",
-                "reference": "9abddaa9f2681d97943748c7fa04161cf4642e8c",
+                "url": "https://api.github.com/repos/spatie/laravel-activitylog/zipball/466f30f7245fe3a6e328ad5e6812bd43b4bddea5",
+                "reference": "466f30f7245fe3a6e328ad5e6812bd43b4bddea5",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "^8.0 || ^9.0 || ^10.0 || ^11.0",
-                "illuminate/database": "^8.69 || ^9.27 || ^10.0 || ^11.0",
-                "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0",
+                "illuminate/config": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
+                "illuminate/database": "^8.69 || ^9.27 || ^10.0 || ^11.0 || ^12.0",
+                "illuminate/support": "^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0",
                 "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.6.3"
             },
             "require-dev": {
                 "ext-json": "*",
-                "orchestra/testbench": "^6.23 || ^7.0 || ^8.0 || ^9.0",
-                "pestphp/pest": "^1.20 || ^2.0"
+                "orchestra/testbench": "^6.23 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+                "pestphp/pest": "^1.20 || ^2.0 || ^3.0"
             },
             "type": "library",
             "extra": {
@@ -11241,7 +11237,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-activitylog/issues",
-                "source": "https://github.com/spatie/laravel-activitylog/tree/4.9.1"
+                "source": "https://github.com/spatie/laravel-activitylog/tree/4.10.1"
             },
             "funding": [
                 {
@@ -11253,7 +11249,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-18T11:31:57+00:00"
+            "time": "2025-02-10T15:38:25+00:00"
         },
         {
             "name": "spatie/laravel-google-cloud-storage",
@@ -11330,27 +11326,27 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.18.3",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78"
+                "reference": "1c9c30ac6a6576b8d15c6c37b6cf23d748df2faa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78",
-                "reference": "ba67eee37d86ed775dab7dad58a7cbaf9a6cfe78",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/1c9c30ac6a6576b8d15c6c37b6cf23d748df2faa",
+                "reference": "1c9c30ac6a6576b8d15c6c37b6cf23d748df2faa",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "illuminate/contracts": "^9.28|^10.0|^11.0|^12.0",
                 "php": "^8.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.7|^8.0|^9.0",
-                "pestphp/pest": "^1.22|^2",
-                "phpunit/phpunit": "^9.5.24|^10.5",
+                "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^1.23|^2.1|^3.1",
+                "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
                 "spatie/pest-plugin-test-time": "^1.1|^2.2"
             },
             "type": "library",
@@ -11378,7 +11374,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.3"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.19.0"
             },
             "funding": [
                 {
@@ -11386,7 +11382,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-22T08:51:18+00:00"
+            "time": "2025-02-06T14:58:20+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -16273,16 +16269,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.12.1",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845"
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
-                "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/024473a478be9df5fdaca2c793f2232fe788e414",
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414",
                 "shasum": ""
             },
             "require": {
@@ -16321,7 +16317,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.0"
             },
             "funding": [
                 {
@@ -16329,7 +16325,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-08T17:47:46+00:00"
+            "time": "2025-02-12T12:17:51+00:00"
         },
         {
             "name": "myclabs/php-enum",
@@ -16931,16 +16927,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.44",
+            "version": "10.5.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1381c62769be4bb88fa4c5aec1366c7c66ca4f36"
+                "reference": "bd68a781d8e30348bc297449f5234b3458267ae8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1381c62769be4bb88fa4c5aec1366c7c66ca4f36",
-                "reference": "1381c62769be4bb88fa4c5aec1366c7c66ca4f36",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bd68a781d8e30348bc297449f5234b3458267ae8",
+                "reference": "bd68a781d8e30348bc297449f5234b3458267ae8",
                 "shasum": ""
             },
             "require": {
@@ -17012,7 +17008,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.44"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.45"
             },
             "funding": [
                 {
@@ -17028,7 +17024,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-31T07:00:38+00:00"
+            "time": "2025-02-06T16:08:12+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -18458,5 +18454,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
