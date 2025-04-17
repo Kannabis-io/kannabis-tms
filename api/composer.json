@@ -1,7 +1,7 @@
 {
-    "name": "LUMBRE.IO",
+    "name": "fleetbase/fleetbase",
     "type": "project",
-    "description": "LUMBRE",
+    "description": "Modular logistics and supply chain operating system (LSOS)",
     "keywords": [
         "framework",
         "laravel"
@@ -9,11 +9,12 @@
     "license": "AGPL-3.0-or-later",
     "require": {
         "php": "^8.0",
-
-        "fleetbase/core-api": "^1.5.28",
-        "fleetbase/fleetops-api": "^0.5.21",
+        "fleetbase/billing-api": "^0.1.5",
+        "fleetbase/core-api": "^1.5.21",
+        "fleetbase/customer-portal-api": "^0.0.5",
+        "fleetbase/fleetops-api": "^0.5.15",
         "fleetbase/registry-bridge": "^0.0.18",
-        "fleetbase/storefront-api": "^0.3.25",
+        "fleetbase/storefront-api": "^0.3.18",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^10.0",
         "laravel/octane": "^2.3",
@@ -39,8 +40,8 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/fleetbase/laravel-model-caching"
+            "type": "composer",
+            "url": "https://registry.fleetbase.io"
         }
     ],
     "autoload": {
