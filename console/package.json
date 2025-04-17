@@ -1,16 +1,15 @@
-{
-  "name": "@fleetbase/console",
-  "version": "0.5.17",
-  "private": true,
-  "description": "Modular logistics and supply chain operating system (LSOS)",
-  "repository": "https://github.com/fleetbase/fleetbase",
-  "license": "AGPL-3.0-or-later",
-  "author": "Fleetbase Pte Ltd <hello@fleetbase.io>",
-  "directories": {
+"name": "@fleetbase/console",
+"version": "0.5.17",
+"private": true,
+"description": "Modular logistics and supply chain operating system (LSOS)",
+"repository": "https://github.com/fleetbase/fleetbase",
+"license": "AGPL-3.0-or-later",
+"author": "Fleetbase Pte Ltd <hello@fleetbase.io>",
+"directories": {
     "doc": "doc",
     "test": "tests"
-  },
-  "scripts": {
+},
+"scripts": {
     "prebuild": "node prebuild.js",
     "build": "pnpm run prebuild && ember build",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
@@ -26,10 +25,10 @@
     "start:dev": "pnpm run prebuild && ember serve --environment development",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test"
-  },
-  "dependencies": {
+},
+"dependencies": {
     "@ember/legacy-built-in-components": "^0.4.2",
-    "@fleetbase/customer-portal-engine": "^0.0.6",
+    "@fleetbase/customer-portal-engine": "^0.0.4",
     "@fleetbase/dev-engine": "^0.2.9",
     "@fleetbase/ember-core": "latest",
     "@fleetbase/ember-ui": "latest",
@@ -43,7 +42,7 @@
     "ember-changeset": "^4.1.2",
     "ember-changeset-validations": "^4.1.1",
     "ember-composable-helpers": "^5.0.0",
-    "ember-concurrency": "^3.1.6",
+    "ember-concurrency": "^3.1.1",
     "ember-concurrency-decorators": "^2.0.3",
     "ember-intl": "6.3.2",
     "ember-math-helpers": "^2.18.2",
@@ -55,8 +54,8 @@
     "postcss-at-rules-variables": "^0.3.0",
     "postcss-custom-properties": "^12.1.11",
     "postcss-nth-list": "^1.0.2"
-  },
-  "devDependencies": {
+},
+"devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/plugin-proposal-decorators": "^7.24.7",
@@ -129,35 +128,33 @@
     "tailwindcss": "^3.4.10",
     "tracked-built-ins": "^3.3.0",
     "webpack": "^5.94.0"
-  },
-  "engines": {
+},
+"engines": {
     "node": ">= 18"
-  },
-  "ember": {
-    "edition": "octane"
-  },
-  "pnpm": {
-    "overrides": {
+},
+"ember": {
+  "edition": "octane"
+},
+"pnpm": {
+  "overrides": {
       "@fleetbase/ember-core": "latest",
       "@fleetbase/ember-ui": "latest",
-      "@fleetbase/fleetops-data": "latest",
-      "ember-concurrency": "^3.1.6",
-      "ember-concurrency-decorators": "^2.1.0"
-    }
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "semi": true,
-    "singleQuote": true,
-    "printWidth": 190,
-    "overrides": [
-      {
-        "files": "*.hbs",
-        "options": {
-          "singleQuote": false
-        }
-      }
-    ]
+      "@fleetbase/fleetops-data": "latest"
   }
+},
+"prettier": {
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 190,
+  "overrides": [
+      {
+          "files": "*.hbs",
+          "options": {
+              "singleQuote": false
+          }
+      }
+  ]
+}
 }
