@@ -134,23 +134,28 @@
       "node": ">= 18"
   },
   "ember": {
-      "edition": "octane"
-  },
-  "pnpm": {
-      "overrides": {
-          "ember-cli-babel": {
-              "babel-plugin-transform-decorators-legacy": "^1.3.5"
-          }
-      },
-      "packageExtensions": {
-          "ember-cli-htmlbars@^6.0.0": {
-              "peerDependencies": {
-                  "ember-cli-htmlbars-inline-precompile": "^3.0.0"
-              }
-          },
-          "ember-cli-htmlbars-inline-precompile@^3.0.0": {
-              "peerDependencies": {
-                  "ember-cli-htmlbars": "^6.0.0"
-              }
-          }
-      }
+    "edition": "octane"
+},
+"pnpm": {
+    "overrides": {
+        "@fleetbase/ember-core": "latest",
+        "@fleetbase/ember-ui": "latest",
+        "@fleetbase/fleetops-data": "latest"
+    }
+},
+"prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 190,
+    "overrides": [
+        {
+            "files": "*.hbs",
+            "options": {
+                "singleQuote": false
+            }
+        }
+    ]
+}
+}
