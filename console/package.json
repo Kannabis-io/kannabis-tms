@@ -141,7 +141,7 @@
         "@fleetbase/ember-core": "latest",
         "@fleetbase/ember-ui": "latest",
         "@fleetbase/fleetops-data": "latest"
-    }
+    },
 },
 "prettier": {
     "trailingComma": "es5",
