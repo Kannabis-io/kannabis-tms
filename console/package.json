@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@ember/legacy-built-in-components": "^0.4.2",
-    "@fleetbase/customer-portal-engine": "^0.0.4",
+    "@fleetbase/customer-portal-engine": "^0.0.6",
     "@fleetbase/dev-engine": "^0.2.9",
     "@fleetbase/ember-core": "latest",
     "@fleetbase/ember-ui": "latest",
