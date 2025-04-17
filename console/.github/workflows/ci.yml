@@ -47,7 +47,7 @@ jobs:
       run: |
         if [[ -n "${{ secrets._GITHUB_AUTH_TOKEN }}" ]]; then
           echo "@fleetbase:registry=https://npm.pkg.github.com/" > .npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets._GITHUB_AUTH_TOKEN }}" >>
         fi
 
     - name: Install Dependencies

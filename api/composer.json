@@ -1,7 +1,7 @@
 {
-    "name": "fleetbase/fleetbase",
+    "name": "LUMBRE.IO",
     "type": "project",
-    "description": "Modular logistics and supply chain operating system (LSOS)",
+    "description": "LUMBRE",
     "keywords": [
         "framework",
         "laravel"
@@ -40,8 +40,8 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://registry.fleetbase.io"
+            "type": "vcs",
+            "url": "https://github.com/fleetbase/laravel-model-caching"
         }
     ],
     "autoload": {
@@ -96,7 +96,7 @@
         }
     },
     "config": {
-        "secure-http": false, 
+        "secure-http": false,
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
