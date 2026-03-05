@@ -1,91 +1,108 @@
 services:
-  cache:
+  tms-cache:
     image: redis:4-alpine
+    container_name: tms-cache
+    restart: unless-stopped
 
-  database:
+  tms-database:
     image: mysql:8.0-oracle
+    container_name: tms-database
     ports:
-      - "3306:3306"
+      - "3308:3306"
     volumes:
       - "./docker/database/:/docker-entrypoint-initdb.d/"
       - "./docker/database/mysql:/var/lib/mysql"
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-TmsKannabis2025}"
       MYSQL_DATABASE: "fleetbase"
+    restart: unless-stopped
 
-  socket:
+  tms-socket:
     image: socketcluster/socketcluster:v17.4.0
+    container_name: tms-socket
     ports:
       - "38000:8000"
     environment:
       SOCKETCLUSTER_WORKERS: 10
       SOCKETCLUSTER_BROKERS: 10
+    restart: unless-stopped
 
-  queue:
+  tms-queue:
     build:
       context: .
       dockerfile: docker/Dockerfile
       target: events-dev
       args:
-        ENVIRONMENT: development
+        ENVIRONMENT: production
+    container_name: tms-queue
     environment:
-      DATABASE_URL: "mysql://root@database/fleetbase"
+      DATABASE_URL: "mysql://root:${MYSQL_ROOT_PASSWORD:-TmsKannabis2025}@tms-database/fleetbase"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
-      CACHE_URL: tcp://cache
-      REDIS_URL: tcp://cache
+      CACHE_URL: tcp://tms-cache
+      REDIS_URL: tcp://tms-cache
+    depends_on:
+      - tms-database
+      - tms-cache
+    restart: unless-stopped
 
-  console:
+  tms-console:
     build:
       context: .
       dockerfile: console/Dockerfile.server-build
       args:
-        ENVIRONMENT: development
+        ENVIRONMENT: production
+    container_name: tms-console
     ports:
       - "4200:4200"
     volumes:
       - console-build:/console
+    restart: unless-stopped
 
-  application:
+  tms-application:
     build:
       context: .
       dockerfile: docker/Dockerfile
       target: app-dev
       args:
-        ENVIRONMENT: development
+        ENVIRONMENT: production
         GITHUB_AUTH_KEY: ${GITHUB_AUTH_KEY}
+    container_name: tms-application
     volumes:
       - console-build:/fleetbase/console
     environment:
-      ENVIRONMENT: development
-      DATABASE_URL: "mysql://root@database/fleetbase"
+      ENVIRONMENT: production
+      DATABASE_URL: "mysql://root:${MYSQL_ROOT_PASSWORD:-TmsKannabis2025}@tms-database/fleetbase"
       QUEUE_CONNECTION: redis
       CACHE_DRIVER: redis
       CACHE_PATH: /fleetbase/api/storage/framework/cache
-      CACHE_URL: tcp://cache
-      REDIS_URL: tcp://cache
-      SESSION_DOMAIN: localhost
+      CACHE_URL: tcp://tms-cache
+      REDIS_URL: tcp://tms-cache
+      SESSION_DOMAIN: console.sefari.io
       BROADCAST_DRIVER: socketcluster
-      MAIL_FROM_NAME: Fleetbase
-      APP_NAME: Fleetbase
+      MAIL_FROM_NAME: KANNABIS
+      APP_NAME: KANNABIS-TMS
       LOG_CHANNEL: daily
       REGISTRY_HOST: https://registry.fleetbase.io
       REGISTRY_PREINSTALLED_EXTENSIONS: 'true'
       OSRM_HOST: https://router.project-osrm.org
     depends_on:
-      - database
-      - cache
-      - queue
+      - tms-database
+      - tms-cache
+      - tms-queue
+    restart: unless-stopped
 
-  httpd:
+  tms-httpd:
     build:
       context: .
       dockerfile: docker/httpd/Dockerfile
+    container_name: tms-httpd
     ports:
-      - "8000:80"
+      - "8100:80"
     depends_on:
-      - application
+      - tms-application
+    restart: unless-stopped
 
 volumes:
   console-build:

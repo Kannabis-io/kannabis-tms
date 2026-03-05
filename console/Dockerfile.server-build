@@ -14,8 +14,8 @@ ARG ENVIRONMENT=production
 # Add the pnpm global bin to the PATH
 ENV PATH /root/.pnpm/bin:$PATH
 
-# Copy pnpm-lock.yaml (or package.json) into the directory /console in the container
-COPY console/package.json console/pnpm-lock.yaml ./
+# Copy package.json into the directory /console in the container
+COPY console/package.json ./
 
 # Copy over .npmrc if applicable
 COPY console/.npmr[c] ./
@@ -30,7 +30,7 @@ RUN apk update && apk add git openssh-client
 RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 # Install app dependencies
-RUN pnpm install
+RUN pnpm install --no-frozen-lockfile
 
 # Copy the console directory contents into the container at /console
 COPY console .
